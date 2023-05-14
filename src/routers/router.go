@@ -1,7 +1,7 @@
-package router
+package routers
 
 import (
-	"api/src/router/routes"
+	"api/src/routers/routes"
 
 	"github.com/gorilla/mux"
 )

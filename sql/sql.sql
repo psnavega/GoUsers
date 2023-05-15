@@ -1,13 +1,13 @@
-CREATE DATABASE IF NOT EXISTS ps-social-media;
-USE ps-social-media;
+CREATE DATABASE IF NOT EXISTS gosocialmedia;
+USE gosocialmedia;
 
 DROP TABLE IF EXISTS users;
 
-CREATE TABLE users(
-    id int auto_increment primary_key,
-    name varchar(50) not null,
-    username varchar(50) not null unique,
-    email varchar(50) not null unique,
-    senha varchar(50) not null unique,
-    createdAt timestamp default current_timestamp()
-) ENGINE=INNODB;
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    senha VARCHAR(50) NOT NULL UNIQUE,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
+) ENGINE=InnoDB;

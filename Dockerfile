@@ -9,4 +9,4 @@ EXPOSE 5001
 
 COPY . .
 
-CMD ["go", "run", "."]
+CMD ["sh", "-c", "sleep 3 && go run ."]

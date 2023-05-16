@@ -9,7 +9,6 @@ import (
 )
 
 func Connect() (*sql.DB, error) {
-	fmt.Println(config.StringConnection)
 	conn, err := sql.Open("mysql", config.StringConnection)
 	if err != nil {
 		fmt.Println(err)

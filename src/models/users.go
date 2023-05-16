@@ -3,7 +3,7 @@ package models
 import "time"
 
 // Represents a um in a social media
-type users struct {
+type Users struct {
 	ID        uint      `json:"id,omitempty"`
 	Name      string    `json:"name,omitempty"`
 	Username  string    `json:"username,omitempty"`
